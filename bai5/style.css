@@ -1,0 +1,36 @@
+#Id1 {
+    color : pink ;
+    background-color: red;
+    font-family: Arial;
+}
+
+.Class1 {
+    color : green ;
+    background-color: yellow;
+    font-family: Arial;
+}
+.ex { 
+    height: 300px;
+    background-color: rgb(231, 219, 219);
+    display:flex;
+    justify-content: space-evenly;
+}
+.ex .ex1 {
+    background-color: rgb(223, 175, 183);
+}
+.ex .ex2 {
+    background-color: rgb(107, 183, 202);
+    /* margin: top right bottom left */
+    /* margin: n = all = n */
+    /* margin: n m = top,bottom=n && right,left=m  */
+    /* margin: n m k = top=n & bottom = k & right,left=m */
+    margin: 20px;
+}
+.ex .ex3 {
+    background-color: rgb(147, 228, 148);
+    /* padding: top right bottom left */
+    /* padding: n = all = n */
+    /* padding: n m = top,bottom=n && right,left=m  */
+    /* padding: n m k = top=n & bottom = k & right,left=m */
+    padding: 20px;
+}
