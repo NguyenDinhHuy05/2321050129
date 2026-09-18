@@ -6,6 +6,11 @@
 :root {
     --main-color:#2fa4e7;
 }
+.border_none{
+    border:none !important ;
+}
+
+
 .navbar {
     background: var(--main-color);
 }
@@ -33,7 +38,6 @@
 .main .left{
     width:20%;
     border-right: 1px solid var(--main-color);
-
 }
 .main .main_form {
     
@@ -43,7 +47,7 @@
     margin:10px auto;
 }
 .main_form-prompt label{
-    font-weight: 640;x`x`
+    font-weight: 640;
     opacity: 0.5;
 }
 .main_form-prompt input{
@@ -88,7 +92,7 @@
 }
 .right_prompt{
     width:99%;
-    height: 380px;
+    /* height: 380px; */
     border:1px solid var(--main-color);
     margin:5px auto;
     border-radius: 10px;
@@ -102,6 +106,7 @@
     padding: 10px 0px ;
 }
 .right_prompt-header p {
+    opacity: 0.8;
     font-weight: 600;
 }
 .right_prompt-header a {
@@ -111,7 +116,7 @@
     display:flex;
 }
 .right_prompt_list{
-    width:25%;
+    width:23%;
     margin:16px 8px 16px 30px ;
 }
 .right_prompt_list .prompt_content_img{
@@ -129,33 +134,46 @@
 
 }
 .right_prompt_list .prompt_content_text p {
-    margin: 6px 0px 0 8px;
+    margin: 6px 0px 20px 8px;
     opacity: 0.8;
     font-size: 15px;
 }
-.Right_prompt_item{
-    flex: 1;
-    border-left:2px solid rgba(0, 0, 0, 0.3);
-    margin-top:18px;
+.right_prompt_noti {
+    flex:1;
+    margin:16px ; 
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
 }
-.Right_prompt_line{
-    display: flex;
+.right_prompt_noti_item {
+    margin:0 10px 0 16px;
+    display:flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3) ;
-    margin: 0 15px;
 }
-.Right_prompt_item_text {
-    padding:8px;
+.right_prompt_noti_item_text {
+    margin:10px 0 0 ;
 }
-.Right_prompt_item_text p {
-    opacity:0.8;
+.right_prompt_noti_item_text p{
     font-size: 14px;
-}
-.Right_prompt_date {
-    padding:23px 0 0 0 ;
-}
-.Right_prompt_date p{
     opacity:0.8;
-    font-size: 14px;
-
+    padding:0 10px 12px 12px ;
+}
+.right_prompt_noti_item_date {
+    margin:0 8px 0 0 ;
+}
+.right_prompt_noti_item_date p {
+    font-size: 13px;
+    opacity:0.6;
+    padding:14px 0px 0px 0px;
+}
+.Qr_code {
+}
+.Qr_downloadApp {
+    margin:25px 0px;
+    display:flex;
+    justify-content: space-around ; 
+}
+.Qr_downloadApp img {
+    height:136px;
+    width:130px;
+    border-radius: 6px;
 }
