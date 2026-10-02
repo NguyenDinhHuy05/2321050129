@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+    --main-color: #2fa4e7;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header Navbar */
+.header {
+    background-color: var(--main-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 56px;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav_list-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    background-color:#6bb7e3 ;
+    padding:4px 6px;
+    border-radius: 70px;
+}
+
+.user_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user_name,
+.user_id {
+    font-size: 12px;
+    font-size: 14px;
+    padding: 2px 12px 0px 0px ; 
+}
+
+/* Main Layout */
+.main {
+    display: flex;
+}
+
+/* Sidebar Left */
+.left {
+    width: 300px;
+    border-right: 2px solid var(--main-color);
+}
+
+.sidebar_list {
+    list-style: none;
+}
+
+.sidebar_list-item {
+    margin:0px 16px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.sidebar_list-item a {
+    display: block;
+    padding: 15px 15px 15px 5px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+.sidebar_footer {
+    padding: 15px 10px;
+    text-align: center;
+    border-top: 1px solid #dbe2e8;
+    background-color: #ffffff;
+}
+
+.sidebar_footer-img {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+
+.sidebar_footer-version,
+.sidebar_footer-copyright {
+    display: block;
+    font-size: 10px;
+    color: #6c757d;
+    margin-top: 2px;
+}
+
+.sidebar_footer-copyright {
+    color: var(--main-color);
+}
+
+/* Right Content Area */
+.right {
+    flex: 1;
+    padding: 12px;
+    background-color: #ffffff;
+    overflow-x: auto;
+}
+
+.schedule {
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.schedule_header {
+    /* margin-bottom: 12px; */
+    padding: 6px 0px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.schedule_header-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #004085;
+    display: flex;
+    padding: 0px 6px 6px;
+    align-items: center;
+}
+
+/* Controls Header */
+.schedule_controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 12px 0px;
+}
+
+.schedule_controls-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.schedule_controls-group-select {
+    background-color: #ffffff;
+    color: #000 ;
+    opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 16px;
+    width: 360px;
+}
+
+.select_week {
+    width: 730px;
+}
+
+.btn_print {
+    background-color: #ffffff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 4px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.schedule_checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.checkbox_item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #333333;
+}
+
+.checkbox_item input[type="checkbox"] {
+    accent-color: var(--main-color);
+}
+
+/* Schedule Table */
+.schedule_table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.schedule_table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #dbe2e8;
+}
+
+.schedule_table th,
+.schedule_table td {
+    border: 1px solid #dbe2e8;
+    text-align: center;
+    font-size: 11px;
+    padding: 0;
+}
+
+.schedule_table th {
+    background-color: #ffffff;
+    color: #6c757d;
+    font-weight: 600;
+    padding: 8px 4px;
+}
+
+.schedule_table th button {
+    background: transparent;
+    border: none;
+    color: #333333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Tiết học & Thời gian (Thanh màu xanh 2 bên) */
+.schedule_table td:first-child,
+.schedule_table td:last-child {
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-weight: 600;
+    width: 50px;
+    padding: 6px 2px;
+    border: 1px solid #258cd1;
+}
+
+/* Card Môn Học (Ô xanh nhạt) */
+.schedule_table td[rowspan] {
+    background-color: #cce5ff;
+    border: 1px solid var(--main-color) !important;
+    color: #000000;
+    text-align: left;
+    padding: 6px 8px;
+    vertical-align: top;
+    line-height: 1.35;
+    font-size: 11px;
+}
+
+.schedule_table td[rowspan] b {
+    color: #000000;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 2px;
+}

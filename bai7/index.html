@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Internal JavaScript -->
+        <script>
+            // @ts-check
+
+            document.writeln("Hello <br> World <br>") ;
+            var fullName = "Anh Thu" ;
+            var age = 17 ; 
+            document.writeln(fullName + age + "<br>") ;
+
+            var number1 = 10 ;
+            var number2 = 5 ;
+            // operator : + - * / %( lấy phần dư)
+            var result = number1 + number2 ;
+            document.writeln("result = " + result) ;
+            document.writeln("number1 = " + ++number1) ;
+            document.writeln("number1 = " + number1++) ;
+            document.writeln("number1 = " + number1) ;
+
+            //Type Conversion
+            // dùng parse+type
+            var a = "1" ;
+            var b = "2"; 
+            document.writeln("result(parse) = " + (parseInt(a) + parseInt(b)) + "<br>");
+
+            // Attributes of string
+            // length
+            // string concatenation +
+            // indexOf("char") ==> index char
+            // includes("char") ==> True or False
+            // replace("String_old", "String_new")
+            document.writeln(fullName.length);
+            document.writeln(fullName.indexOf("h"));
+            document.writeln(fullName.includes("h"));
+            document.writeln(fullName.replace("Anh","Huy"));
+            // check First char
+            // startsWith("char") ==> True or False
+            document.writeln(fullName.startsWith("Anh"));
+            //toUpperCase() / toLowerCase()
+            document.writeln(fullName.toUpperCase());
+            document.writeln(fullName.toLowerCase());
+            document.writeln(isNaN(20));
+            document.writeln(isNaN("20"));
+            document.writeln(isNaN("20a"));
+
+            // date()
+            var toDay = new Date();
+            document.writeln("<br>" + toDay);
+            // specific time
+            var day = new Date("10/20/2026");
+            document.writeln("<br>" + day);
+
+            // year / month / date / day of the week / hours 
+            document.writeln("<br>" + toDay.getFullYear());
+            document.writeln("<br>" + toDay.getMonth());
+            document.writeln("<br>" + toDay.getDate());
+            document.writeln("<br>" + toDay.getDay());
+            document.writeln("<br>" + toDay.getHours());
+            document.writeln("<br>");
+            document.writeln("<br>");
+            // Array 
+            var numbers = [1, 2, 3, 4, 5, 6];
+            var names = ["Anh", "Thu", "Cute", "so", "mot", "the", "gioi"] ; 
+            var informations = ["Thu", 16, true];
+            document.writeln(numbers[1] + "<br>");
+            document.writeln(names[1] + "<br>");
+            document.writeln(informations[1] + "<br>");
+            // length array
+            document.writeln(numbers.length + "<br>");
+            document.writeln(names.length + "<br>");
+            document.writeln(informations.length + "<br>");
+            // array concatenation
+            // array1.concat(array2, array3)
+            var arrayConcat = numbers.concat(names, informations);
+            document.writeln(arrayConcat + "<br>");
+            // John("char")
+            document.writeln(names.join(" ") + "<br>");
+            // pop 
+            document.writeln(numbers.pop() + "<br>");
+            names.push("<3");
+            document.writeln(names + "<br>");
+            // reverse 
+            document.writeln(names.reverse() + "<br>");
+
+            // var number1 = 10 ;
+            // var number2 = 5 ;
+            // compare == != > < >= <= && ||
+            document.writeln((number1 == number2) + "<br>");
+            document.writeln((number1 != number2) + "<br>");
+            document.writeln((number1 > number2) + "<br>");
+            document.writeln((number1 >= 9) + "<br>");
+            document.writeln((number1 >= 10) + "<br>");
+            document.writeln(((number1 < number2) && (number1 >= 10)  ) + "<br>");
+            document.writeln(((number1 < number2) || (number1 >= 10)  ) + "<br>");
+
+
+            // conditional
+            if (toDay.getDay() == 5) {
+                document.writeln("hôm nay là thứ 6 " + "<br>");
+            }else {
+                document.writeln("hôm nay Không phải thứ 6 " + "<br>");
+            }
+
+            // exercise point 
+            var point = 5 ;
+            if (point >= 4) {
+                document.writeln("Chúc mừng bạn đã qua môn !" + "<br>");
+            }else {
+                document.writeln("Chia buồn vì bạn đã trượt môn ! " + "<br>");
+            }
+        </script>
+        <!-- External -->
+        <script src="script.js"></script>
+    </body>
+</html>

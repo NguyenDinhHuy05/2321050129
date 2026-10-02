@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời khóa biểu dạng tuần</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav_list">
+                <li class="nav_list-item"><a href="#">Thực tập, Đồ án</a></li>
+                <li class="nav_list-item"><a href="#">Thủ tục Một Cửa</a></li>
+                <li class="nav_list-item"><a href="#">Một Cửa online</a></li>
+                <li class="nav_list-item"><a href="#">E-mail HUMG</a></li>
+                <li class="nav_list-item"><a href="#">Quy chế - Quy định</a></li>
+            </ul>
+            <div class="user_info">
+                <img src="/img/Portrait.jpg" alt="" class="user_img">
+                <div>
+                    <p class="user_name">Nguyễn Đình Huy</p>
+                    <p class="user_id">2321050129</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Sidebar Navigation -->
+        <div class="left">
+            <nav class="sidebar_nav">
+                <ul class="sidebar_list">
+                    <li class="sidebar_list-item"><a href="#">Trang chủ</a></li>
+                    <li class="sidebar_list-item"><a href="#">Thông báo từ ban quản trị</a></li>
+                    <li class="sidebar_list-item"><a href="#">Chương trình đào tạo</a></li>
+                    <li class="sidebar_list-item"><a href="#">Đăng ký chính thức môn học</a></li>
+                    <li class="sidebar_list-item"><a href="#">Đăng ký nguyện vọng các môn cần học</a></li>
+                    <li class="sidebar_list-item"><a href="#">Xem học phí</a></li>
+                    <li class="sidebar_list-item"><a href="#">Đóng học phí</a></li>
+                    <li class="sidebar_list-item active"><a href="#">Thời khóa biểu tuần</a></li>
+                    <li class="sidebar_list-item"><a href="#">Thời khóa biểu học kỳ</a></li>
+                    <li class="sidebar_list-item"><a href="#">Kết quả điểm danh</a></li>
+                    <li class="sidebar_list-item"><a href="#">Lịch thi</a></li>
+                    <li class="sidebar_list-item"><a href="#">Xem điểm</a></li>
+                    <li class="sidebar_list-item"><a href="#">Kết quả xét tốt nghiệp</a></li>
+                    <li class="sidebar_list-item"><a href="#">Khảo sát đánh giá</a></li>
+                    <li class="sidebar_list-item"><a href="#">Cập nhật thông tin lý lịch</a></li>
+                    <li class="sidebar_list-item"><a href="#">Gửi ý kiến</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar_footer">
+                <img src="/baitapTKBHumg/logoHumg.webp" alt="Logo HUMG" class="sidebar_footer-img">
+                <span class="sidebar_footer-version">MOHN-V 2026.09.J.31</span>
+                <span class="sidebar_footer-copyright">Design by aqtech.vn</span>
+            </div>
+        </div>
+
+        <!-- Schedule -->
+        <div class="right">
+            <div class="schedule">
+                <!-- schedule_header Title -->
+                <div class="schedule_header">
+                    <p class="schedule_header-title">THỜI KHÓA BIỂU DẠNG TUẦN</p>
+                </div>
+
+                <!-- schedule_controls -->
+                <div class="schedule_controls">
+                    <div class="schedule_controls-group">
+                        <select class="schedule_controls-group-select">
+                            <option value="">Học kỳ 1 - Năm học 2021 - 2022</option>
+                            <option value="">Học kỳ 1 - Năm học 2022 - 2023</option>
+                            <option value="">Học kỳ 1 - Năm học 2023 - 2024</option>
+                            <option value="">Học kỳ 1 - Năm học 2024 - 2025</option>
+                            <option value="">Học kỳ 1 - Năm học 2025 - 2026</option>
+                            <option value="">Học kỳ 1 - Năm học 2026 - 2027</option>
+                        </select>
+                        <select class="schedule_controls-group-select">
+                            <option value="">Thời khóa biểu cá nhân</option>
+                            <option value="">Thời khóa biểu lớp sinh viên</option>
+                            <option value="">Thời khóa biểu lớp</option>
+                            <option value="">Thời khóa biểu môn học</option>
+                            <option value="">Thời khóa biểu khoa quản lý sinh viên</option>
+                        </select>
+                    </div>
+
+                    <div class="schedule_controls-group">
+                        <select class="schedule_controls-group-select select_week">
+                            <option value="">Tuần 7 [từ ngày 14/09/2026 đến ngày 20/09/2026]</option>
+                            <option value="">Tuần 8 [từ ngày 21/09/2026 đến ngày 27/09/2026]</option>
+                            <option value="">Tuần 9 [từ ngày 28/09/2026 đến ngày 04/10/2026]</option>
+                            <option value="">Tuần 10 [từ ngày 05/10/2026 đến ngày 11/10/2026]</option>
+                            <option value="">Tuần 11 [từ ngày 12/10/2026 đến ngày 18/10/2026]</option>
+                            <option value="">Tuần 12 [từ ngày 19/10/2026 đến ngày 25/10/2026]</option>
+                        </select>
+                        <button type="button" class="btn_print">In</button>
+
+                        <div class="schedule_checkbox-group">
+                            <div class="checkbox_item">
+                                <input type="checkbox">
+                                <p>Thời khóa biểu tối</p>
+                            </div>
+                            <div class="checkbox_item">
+                                <input type="checkbox" disabled >
+                                <p>Dạy bù</p>
+                            </div>
+                            <div class="checkbox_item">
+                                <input type="checkbox" disabled >
+                                <p>Trùng lịch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schedule Table -->
+                <div class="schedule_table">
+                    <table>
+                        <!-- Tiêu đề các cột -->
+                        <tr>
+                            <th><button>--</button></th>
+                            <th>Thứ 2 (28/09)</th>
+                            <th>Thứ 3 (29/09)</th>
+                            <th>Thứ 4 (30/09)</th>
+                            <th>Thứ 5 (01/10)</th>
+                            <th>Thứ 6 (02/10)</th>
+                            <th>Thứ 7 (03/10)</th>
+                            <th>Chủ Nhật (04/10)</th>
+                            <th><button>--</button></th>
+                        </tr>
+
+                        <!-- Tiết 1 - 3 -->
+                        <tr>
+                            <td>Tiết 1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="3">
+                                <b>Quản trị dự án CNTT (7080634)</b><br>
+                                Nhóm: 200<br>
+                                Phòng: HNA1-504-A1-504<br>
+                                GV: Phạm Quang Hiển<br>
+                                06:45 -&gt; 09:35
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>06:45</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>07:45</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>08:45</td>
+                        </tr>
+
+                        <!-- Tiết 4 - 5 -->
+                        <tr>
+                            <td>Tiết 4</td>
+                            <td rowspan="2">
+                                <b>Công nghệ phần mềm (7080104)</b><br>
+                                Nhóm: 01<br>
+                                Phòng: HNA1-501-A1-501<br>
+                                GV: Nguyễn Thị Thanh<br>
+                                09:45 -&gt; 11:35
+                            </td>
+                            <td rowspan="2">
+                                <b>Điện toán đám mây và ứng dụng (7080504)</b><br>
+                                Nhóm: 03<br>
+                                Phòng: HNAD502-D5-2<br>
+                                GV: Nguyễn Duy Huy<br>
+                                09:45 -&gt; 11:35
+                            </td>
+                            <td rowspan="2">
+                                <b>Công nghệ phần mềm (7080104)</b><br>
+                                Nhóm: 01<br>
+                                Phòng: HNA1-504-A1-504<br>
+                                GV: Nguyễn Thị Thanh<br>
+                                09:45 -&gt; 11:35
+                            </td>
+                            <td rowspan="2">
+                                <b>Kỹ năng giao tiếp và làm việc theo nhóm (7000002)</b><br>
+                                Nhóm: 201<br>
+                                Phòng: HNA1-203-A1-203<br>
+                                GV: Nguyễn Thị Thu Hương<br>
+                                09:45 -&gt; 11:35
+                            </td>
+                            <td></td>
+                            <td rowspan="2">
+                                <b>Kỹ năng giao tiếp và làm việc theo nhóm (7000002)</b><br>
+                                Nhóm: 201<br>
+                                Phòng: HNA1-203-A1-203<br>
+                                GV: Nguyễn Thị Thu Hương<br>
+                                09:45 -&gt; 11:35
+                            </td>
+                            <td></td>
+                            <td>09:45</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 5</td>
+                            <td></td>
+                            <td></td>
+                            <td>10:45</td>
+                        </tr>
+
+                        <!-- Tiết 6 - 8 -->
+                        <tr>
+                            <td>Tiết 6</td>
+                            <td></td>
+                            <td rowspan="3">
+                                <b>Tiếng Anh 2 (7010602)</b><br>
+                                Nhóm: 161<br>
+                                Phòng: HNBG305-Giảng đường 305khu B<br>
+                                GV: Nguyễn Thanh Bình<br>
+                                12:30 -&gt; 15:20
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="3">
+                                <b>Tiếng Anh 1 (7010601)</b><br>
+                                Nhóm: 201<br>
+                                Phòng: HNAD502-D5-2<br>
+                                GV: Trần Đình Thước<br>
+                                12:30 -&gt; 15:20
+                            </td>
+                            <td></td>
+                            <td>12:30</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>13:30</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>14:30</td>
+                        </tr>
+
+                        <!-- Tiết 9 - 10 -->
+                        <tr>
+                            <td>Tiết 9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2">
+                                <b>Điện toán đám mây và ứng dụng (7080504)</b><br>
+                                Nhóm: 03<br>
+                                Phòng: HNAA406-A406<br>
+                                GV: Nguyễn Duy Huy<br>
+                                14:30 -&gt; 16:20
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>15:30</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 10</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>16:30</td>
+                        </tr>
+
+                        <!-- Tiết 11 - 13 -->
+                        <tr>
+                            <td>Tiết 11</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2">
+                                <b>Phát triển ứng dụng Web + BTL (7080116)</b><br>
+                                Nhóm: 04<br>
+                                Phòng: HNAD402-D4-2<br>
+                                GV: Ngô Ngọc Anh<br>
+                                16:30 -&gt; 18:20
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>17:30</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 12</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>18:30</td>
+                        </tr>
+                        <tr>
+                            <td>Tiết 13</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2">
+                                <b>Phát triển ứng dụng Web + BTL (7080116)</b><br>
+                                Nhóm: 04<br>
+                                Phòng: HNAD402-D4-2<br>
+                                GV: Ngô Ngọc Anh<br>
+                                18:30 -&gt; 20:20
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>19:30</td>
+                        </tr>
+
+                        <!-- Chân bảng -->
+                        <tr>
+                            <th><button>--</button></th>
+                            <th>Thứ 2 (28/09)</th>
+                            <th>Thứ 3 (29/09)</th>
+                            <th>Thứ 4 (30/09)</th>
+                            <th>Thứ 5 (01/10)</th>
+                            <th>Thứ 6 (02/10)</th>
+                            <th>Thứ 7 (03/10)</th>
+                            <th>Chủ Nhật (04/10)</th>
+                            <th><button>--</button></th>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
