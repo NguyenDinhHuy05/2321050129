@@ -111,10 +111,16 @@
 
             // exercise point 
             var point = 5 ;
-            if (point >= 4) {
-                document.writeln("Chúc mừng bạn đã qua môn !" + "<br>");
-            }else {
+            if (point <= 4 ) {
                 document.writeln("Chia buồn vì bạn đã trượt môn ! " + "<br>");
+            }else if(point <= 5 && point > 4){
+                document.writeln("bạn đật điểm D! " + "<br>");
+            }else if(point <= 7 && point > 5){
+                document.writeln("bạn đật điểm C! " + "<br>");
+            }else if(point <= 8 && point > 7){
+                document.writeln("bạn đật điểm B! " + "<br>");
+            }else{
+                document.writeln("bạn đật điểm A! " + "<br>");
             }
         </script>
         <!-- External -->
