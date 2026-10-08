@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <script>
+            // @ts-check
+            // object : var nameObject = {};
+            var infoStudent = {
+                allName : "Nguyen Dinh Huy",
+                ageSt : 21 ,
+                gender : true , //true : male , false : famale
+                adress : {
+                    city : "Ha noi" ,
+                    ward : "Dong Ngac" ,
+                    street : "Le Van Hien"
+                } 
+            };
+
+            var films = {
+                nameFilm : "Chu be dan", 
+                releaseYear : 2026 ,
+                genres : "Hai dom" ,
+                durationMinutes : 165 , 
+                isReleased : true ,
+                rating : 9.2 ,
+                actor : {
+                    leadActor : [
+                        "Nguyen Van A " , "Nguyen Van B" , " Nguyen Van C"
+                    ],
+                    supportingActor : [
+                        "Nguyen A " , "Nguyen B" , " Nguyen C"
+                    ]
+                },
+            };
+            document.writeln("<br>" + films.nameFilm )
+            document.writeln("<br>" + films.actor.leadActor )
+            document.writeln("<br>" + films.actor.leadActor[2] )
+
+            // switch case 
+            var nowDate = new Date() ; 
+            var theDay = nowDate.getDay() ; 
+            switch (theDay) {
+                case 5:
+                    document.writeln("<br>" + "Finally friday" );
+                    break;
+                case 6:
+                    document.writeln("<br>" + "Super saturday" );
+                    break;
+                case 0:
+                    document.writeln("<br>" + "sleepy sunday" );
+                    break;
+                default:
+                    document.writeln("<br>" + "I'm looking forward to this weekend!" );
+                    break;
+            };
+
+            // for(start ; end ; ++){};
+            for (let index = 1; index <=10; index++) {
+                document.writeln("<br>" + "Hello World ! " + index  );
+            }
+
+            var listStudents = ["Anh", "Thu", "Cute", "Nhat", "The" , "Gioi!"];
+            for (let index = 0; index < listStudents.length; index++) {
+                if( listStudents[index] == "Anh" || listStudents[index] == "Thu" )
+                    document.writeln("<br>" + listStudents[index] );
+            }
+        </script>
+    </body>
+</html>
