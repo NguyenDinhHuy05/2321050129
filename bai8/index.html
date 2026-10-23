@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <script>
+            // popup boxes
+            // alert("Xin chào!")
+
+            // confirm
+            // var cf = confirm("press a button")
+            // if(cf == true ){
+            //     document.writeln("You pressed OK!")
+            // }
+            // else {
+            //     document.writeln("You pressed Cannel!")
+            // }
+
+            // prompt
+            // var namePrompt = prompt("What is your name ?")
+            // document.writeln("You name is " + namePrompt)
+
+            // function name() { code  }
+            function hello() { document.writeln("Hello!") }
+            hello();
+            // function name(params) { }
+            function helloName(name , age) { document.writeln("Hello " + name + " " + age + " tuổi") }
+            helloName("Anh Thu" , 17);
+
+            function calculateRectanglePerimeter(length, width) {
+                return 2 * (length + width);
+            }
+            document.writeln("<br>perimeter of a rectangle : " + calculateRectanglePerimeter(10, 5))
+
+            var arrayName = ["Anh", "Thu", "cute", "nhất", "thế", "giới!"]
+            for (let index = 0; index < arrayName.length; index++) {
+                const element = arrayName[index]
+                document.writeln("<br>Hello " + element )
+            }
+        </script>
+    </body>
+</html>
