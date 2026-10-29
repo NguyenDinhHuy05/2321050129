@@ -8,13 +8,28 @@
     </head>
     <body>
         <div class="theme">
+            <h1>chế độ sáng</h1>
             <img src="/bai9/bai9 -javascript/mattroi.png" alt="">
-            <button onclick="switchTheme">Dark-mode</button>
+            <button onclick="switchTheme()">Dark-mode</button>
         </div>
         <script>
             // @ts-check
+            var lightMode = true ; 
             function switchTheme(){
-                document.getElementsByTagName('body').style = background-color: black
+
+                if (lightMode) {
+                    document.getElementsByTagName('body')[0].style.backgroundColor = "black";
+                    document.getElementsByTagName('body')[0].style.color = "white";
+                    document.getElementsByTagName('button')[0].innerText = "Light-mode";
+                    document.getElementsByTagName('img')[0].src = "mattrang.png";
+                    lightMode = false ;
+                } else {
+                    document.getElementsByTagName('body')[0].style.backgroundColor = "white";
+                    document.getElementsByTagName('body')[0].style.color = "black";
+                    document.getElementsByTagName('button')[0].innerText = "Dark-mode";
+                    document.getElementsByTagName('img')[0].src = "mattroi.png";
+                    lightMode = true ; 
+                }
             }
         </script>
     </body>
